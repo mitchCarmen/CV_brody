@@ -1,0 +1,16 @@
+# Use FFMJPEG
+
+# Used this youtuber for help https://www.youtube.com/watch?v=QQ-djYYpKFo
+# https://www.rickmakes.com/ffmpeg-notes/
+# https://gist.github.com/loretoparisi/a9277b2eb4425809066c380fed395ab3
+
+FFMJPEG-----
+ffprobe tells you the metadata on the file
+ffplay plays video
+ffmpeg actually makes changes
+
+Steps
+1) Take video on goPro >> Save to iphone >> send to mac via AirDrop >> Put video in here
+2) ffmpeg -i mov1.mp4 -vf fps=10 out%d.png
+3) run building_training_dataset.py
+4) zip it and give to DR
